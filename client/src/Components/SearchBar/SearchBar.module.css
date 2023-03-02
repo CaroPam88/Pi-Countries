@@ -1,0 +1,40 @@
+
+.container {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: #aec6cf;
+    border-radius: 10px;
+    position: relative;
+    
+    transform: translateX(-10%);
+}
+
+.search {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 100%;
+    padding: 1px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #fff;
+    outline: none;
+}
+
+.button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #aec6cf;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}

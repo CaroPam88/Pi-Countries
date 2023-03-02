@@ -1,0 +1,9 @@
+ .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+  flex:1;
+  max-width: -55rem;
+  max-height: -55rem;
+    
+} 

@@ -1,0 +1,38 @@
+.container {
+	display: flex;
+	justify-content: center;
+	border-color: black;
+	border: 3px;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/003/104/336/non_2x/an-airplane-flying-above-the-clouds-free-photo.jpg");
+	padding: 10% 4%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+	height: 450px;
+    
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+      
+   
+}
+.button {
+    font-family: 'Courier New', Courier, monospace;   
+    font-weight: bold; 
+	color: black;
+	background-color:rgb(212, 229, 240);
+	height: 60 px;
+	width: 300px;
+	border-radius: 9px;
+	padding: 10px;
+	cursor: pointer;
+}
+.footer{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
