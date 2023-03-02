@@ -3,6 +3,7 @@ import { getCountryByName } from "../../redux/actions";
 import { useDispatch } from "react-redux";
 import style from "../SearchBar/SearchBar.module.css"
 
+
 const SearchBar = () => {
   const dispatch = useDispatch();
   const [input, setInput] = useState("");
@@ -13,6 +14,8 @@ const SearchBar = () => {
 
   const handleClick = ()=>{
     dispatch( getCountryByName(input))
+    setInput(1)
+
   }
   
 return( 
@@ -26,6 +29,7 @@ return(
     />
     <button onClick={handleClick}  className={style.button}>SEARCH</button>
   </div>
+  
 )};
 export default SearchBar
 

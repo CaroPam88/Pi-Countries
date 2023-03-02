@@ -67,3 +67,11 @@
     border-radius: 25px;
     cursor: pointer;
   }
+  .optionDiff,
+  .optionDur,
+  .optionSea,
+  .optionCou
+  {
+   font-family: 'Courier New', Courier, monospace;
+  }
+ 
