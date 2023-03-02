@@ -73,7 +73,7 @@ const Home = () => {
           className={style.order}
         >
           <option value="" key="">
-            ---
+            Order
           </option>
           <option value="asc" key="asc">
             A-Z
@@ -89,7 +89,7 @@ const Home = () => {
           className={style.population}
         >
           <option value="" key="">
-            ---
+            Population
           </option>
           <option value="Max" key="Max">
             Max population
@@ -100,7 +100,7 @@ const Home = () => {
         </select>
 
         <select name="activity" onChange={handleFilter} className={style.activities}>
-          <option value="">---</option>
+          <option value="">Activities</option>
           {activity.map((activity) => {
             return (
               <option key={activity.id} value={activity.name}>
