@@ -1,12 +1,9 @@
 import { getCountryById } from "../../redux/actions";
-// import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import style from "../Detail/Detail.module.css"
-//DAR ESTILOS
-//SACAR LA NAVBAR Y EL LINK AL FORMULARIO.
-//QUE SOLO APAREZCA EL LINH AL HOME Y EL DETAIL DE LOS PAISES
+ 
 
 const CountryId = () => {
   const dispatch = useDispatch();
@@ -29,11 +26,6 @@ const CountryId = () => {
 
   return (
     <div className={style.container}>
-      {/* <footer className={style.footer}>
-        <div>
-          <p>Made with ❤️ by Carolina Ramirez</p>
-        </div>
-      </footer> */}
       <div className={style.containerCard}>
         <div >
           <img src={flag} alt={name} />

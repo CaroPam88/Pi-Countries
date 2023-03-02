@@ -1,4 +1,4 @@
-  import Card from "../Card/Card";
+import Card from "../Card/Card";
 import style from "./CardsContainer.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
