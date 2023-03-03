@@ -7,8 +7,7 @@ import style from "../home/Home.module.css";
 
 
 const Home = () => {
-  const dispatch = useDispatch();
-  
+  const dispatch = useDispatch(); 
 
   const activity = useSelector((state) => state.activities);
 
@@ -23,12 +22,12 @@ const Home = () => {
     activity: "",
   });
 
-  function handleFilter(event) {
-    setFilters({
+  function handleFilter(event) { //Vamos a actualizar el estado de los filtros
+    setFilters({                 
       ...filters,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value, //agregamos lo que se va a actualizar
     });
-    dispatch(
+    dispatch(  //dispachamos la accion  que tiene todos los filtros.
       filterCountries({ ...filters, [event.target.name]: event.target.value })
     );
   }
