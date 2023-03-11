@@ -39,6 +39,7 @@ router.get("/:id", async (req, res)=>{
   }
 
 })
+//AGREGAR VALIDACIONES
 
 
 

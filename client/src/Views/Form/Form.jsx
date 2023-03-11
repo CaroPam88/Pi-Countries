@@ -18,6 +18,7 @@ function Form() {
     difficulty: "",
     duration: "",
     season: "",
+    description: "",
     idCountry: [],
   });
   const [error, setError] = useState({
@@ -51,7 +52,7 @@ function Form() {
   };
 
   const submitHandler = async (event) => {
-    // event.preventDefault();
+   // event.preventDefault();
     await axios
       .post("http://localhost:3001/activities", form)
       .then((response) => alert("Created Activity!"))
@@ -68,6 +69,7 @@ function Form() {
           <h3 className={style.name}>
             <label>Name:</label>
           </h3>
+
           <input
             type={"text"}
             value={form.name}
@@ -77,6 +79,7 @@ function Form() {
           />
           {error.name && <span>{error.name}</span>}
         </div>
+        
         <div>
           <h3 className={style.difficulty}>
             <label>Difficulty:</label>
